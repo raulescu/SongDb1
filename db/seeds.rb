@@ -5,6 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Artist.create(name: "The Advent")
-Artist.create(name: "Function")
-Artist.create(name: "Cryptik")
+advent = Artist.create(name: "The Advent")
+function = Artist.create(name: "Function")
+cryptik = Artist.create(name: "Cryptik")
+
+Song.create([
+  {name: "P Tek", artist: advent},
+  {name: "Distance", artist: advent},
+  {name: "Live Segment - Recorded Live @ MOTOR Detroit", artist: advent},
+  {name: "Disaffected", artist: function},
+  {name: "Montage", artist: function},
+  {name: "Burn", artist: function},
+  {name: "Descending", artist: function},
+  {name: "Radiance|Figure", artist: cryptik}
+  ])
